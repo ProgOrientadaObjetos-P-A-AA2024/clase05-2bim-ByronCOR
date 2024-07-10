@@ -15,7 +15,6 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
     private double totalProblemas;
     protected double promedioEnsayo;
 
-    
     public void establecerNumeroProblemas(int n) {
         numeroProblemas = n;
     }
@@ -31,8 +30,10 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
     public double obtenerTotalProblemas() {
         return totalProblemas;
     }
-    
-    
+
+    /* Ya que por obigacion se debe usar para implementar los metodos 
+    de la interface
+     */
     @Override
     public void establecerPromedioEnsayo() {
 
@@ -45,5 +46,5 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
         return promedioEnsayo;
 
     }
-    
+
 }

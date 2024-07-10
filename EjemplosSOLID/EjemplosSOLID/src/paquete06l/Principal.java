@@ -10,7 +10,9 @@ package paquete06l;
 public class Principal {
     public static void main(String[] args) {
         Banco b1= new Banco();
-        b1.establecerNombreBanco("PICHINCHA");
+        b1.establecerNombreBanco("BANCO PICHINCHA");
+    
+        
         TarjetaCredito t1 = new TarjetaCredito(b1,"Visa","110001212121");
 
         MayorEdad representante = new MayorEdad("José",t1);
@@ -18,9 +20,10 @@ public class Principal {
         MenorEdad menor = new MenorEdad("Felipe", representante);
         
         
-        System.out.printf("Nombre:%s - Tarjeta:%s\n",
+        System.out.printf("Nombre:%s - Tarjeta:%s %s\n",
                 menor.obtenerNombre(), 
-                menor.obtenerRepresentante().obtenerTarjeta().obtenerNombreBanco());
+                menor.obtenerRepresentante().obtenerTarjeta().obtenerTarjeta(),
+                menor.obtenerRepresentante().obtenerTarjeta().obtenerNombreBanco().obtenerNombre());
         
     }
 }
