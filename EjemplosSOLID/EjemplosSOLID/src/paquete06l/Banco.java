@@ -11,27 +11,19 @@ package paquete06l;
  */
 public class Banco {
 
-    private String nombre;
-    private String tarjeta;
+    private String nombreBanco;
 
-    public Banco(String nombre, String tar) {
-        tarjeta = tar;
+
+
+    public void establecerNombreBanco(String n) {
+        nombreBanco = n;
     }
 
-    public void establecerNombre(String n) {
-        nombre = n;
-    }
 
-    public void establecerTarjeta(String n) {
-        tarjeta = n;
-    }
-
-    public String obtenerTarjeta() {
-        return tarjeta;
-    }
+  
 
     public String obtenerNombre() {
-        return nombre;
+        return nombreBanco;
     }
 
 }
